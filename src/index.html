@@ -4,6 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO APP</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <header>Todos</header>
+      <main>
+        <div class="event-initer">
+          <input
+            class="input-trigger"
+            onkeyup="handleInputKey(event)"
+            type="text"
+          />
+          <input
+            class="go-trigger"
+            onclick="handleAddTodoEvent(event)"
+            type="button"
+            value="GO"
+          />
+        </div>
+        <ul class="event-list"></ul>
+      </main>
+    </section>
+  </body>
+  <script src="./main.js"></script>
 </html>

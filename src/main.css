@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+}
+
+section.container {
+  width: 100%;
+  padding: 32px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
