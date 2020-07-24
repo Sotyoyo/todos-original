@@ -4,10 +4,37 @@ body {
 
 section.container {
   width: 100%;
+  min-height: 300px;
   padding: 32px;
   background-color: beige;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+ul.event-list {
+  padding-left: 0px;
+  list-style: none;
+}
+
+ul.event-list > li {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.event-list > li > p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul.event-list > li.completed > p {
+  font-family: "Courier New", Courier, monospace;
+  color: gray;
+  text-decoration: line-through;
+}
+
+ul.event-list > li > input[type="button"] {
+  height: 50%;
 }
